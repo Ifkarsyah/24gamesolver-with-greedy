@@ -5,7 +5,7 @@ import csv
 def export_to_csv(algo="bf"):
     result = main_bf() if algo == "bf" else main_gr()
     fout_name = make_file_name(algo)
-    outfile = open(fout_name, 'w')
+    outfile = open(fout_name, 'w', newline='')
     writer = csv.writer(outfile)
     writer.writerows(result)
 
