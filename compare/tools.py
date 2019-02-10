@@ -39,6 +39,8 @@ def bracketting(expr, typ=11):
         pass
     return ''.join(expr)
 
+op_map = {'+': 5, '-': 4, '*': 3, '/': 2, '(': -1}
+
 
 def score(expr="10+11*12/13", goal=24):
     """
@@ -47,7 +49,7 @@ def score(expr="10+11*12/13", goal=24):
         eval("1+1+1+1")=4, so diff = abs(4-24) = 20
         result = 15 - 20 = -5
     """
-    op_map = {'+': 5, '-': 4, '*': 3, '/': 2, '(': -1}
+    global op_map
     try:
         diff = abs(eval(expr)-goal)
         op_score = sum([expr.count(op) * op_map[op] for op in op_map])

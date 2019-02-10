@@ -1,4 +1,4 @@
-from main_compare import main_bf
+from main_compare import main_bf, main_gr
 import csv
 
 
