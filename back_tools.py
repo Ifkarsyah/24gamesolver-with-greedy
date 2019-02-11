@@ -1,43 +1,4 @@
-def bracketting(expr, typ=11):
-    if typ == 0:
-        expr.insert(0, '(')
-        expr.insert(4, ')')
-        expr.insert(7, ')')
-    elif typ == 1:
-        expr.insert(0, '(')
-        expr.insert(3, '(')
-        expr.insert(7, '))')
-    elif typ == 2:
-        expr.insert(0, '(')
-        expr.insert(4, ')')
-        expr.insert(6, '(')
-        expr.insert(10, ')')
-    elif typ == 3:
-        expr.insert(2, '((')
-        expr.insert(6, ')')
-        expr.insert(9, ')')
-    elif typ == 4:
-        expr.insert(2, '(')
-        expr.insert(5, '(')
-        expr.insert(9, '))')
-    elif typ == 5:
-        expr.insert(0, '(')
-        expr.insert(6, ')')
-    elif typ == 6:
-        expr.insert(2, '(')
-        expr.insert(8, ')')
-    elif typ == 7:
-        expr.insert(0, '(')
-        expr.insert(4, ')')
-    elif typ == 8:
-        expr.insert(2, '(')
-        expr.insert(6, ')')
-    elif typ == 9:
-        expr.insert(4, '(')
-        expr.insert(8, ')')
-    elif typ == 10:
-        pass
-    return ''.join(expr)
+
 
 op_map = {'+': 5, '-': 4, '*': 3, '/': 2, '(': -1}
 
