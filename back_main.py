@@ -1,5 +1,5 @@
-from front_end_2 import *
-from algo import *
+from front_2 import *
+from back_algo import *
 
 
 def main():

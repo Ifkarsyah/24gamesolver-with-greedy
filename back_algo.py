@@ -1,4 +1,3 @@
-from tools import bracketting, score, op_map
 
 
 def solve_greedy(inp=[10, 11, 12, 13], goal=24):
