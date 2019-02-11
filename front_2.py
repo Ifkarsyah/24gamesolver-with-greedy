@@ -6,8 +6,8 @@ import sys
 
 def input_from_file():
     with open(sys.argv[1], "r") as fin:
-        inp = sorted(map(int, fin.read().split()), reverse=True)
-    return inp
+        raw_input = list(map(int, fin.read().split()))
+    return raw_input
 
 
 def output_to_file(expr):
