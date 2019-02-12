@@ -1,4 +1,17 @@
+from random import shuffle
 
+def deckGen() :
+    x = list(range(1, 14)) # not include 14
+    shuffle(x)
+
+    for i in range(3):
+        y =list(range(1, 14))
+        shuffle(y)
+        x.extend(y)
+
+    shuffle(x)
+
+    return x
 
 op_map = {'+': 5, '-': 4, '*': 3, '/': 2, '(': -1}
 
